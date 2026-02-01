@@ -1,0 +1,46 @@
+/* CSS Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --btn-bg: #000000;
+  --btn-text: #ffffff;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --btn-bg: #ffffff;
+  --btn-text: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  font-size: 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
